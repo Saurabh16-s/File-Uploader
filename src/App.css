@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+
+* { box-sizing: border-box; }
+
+.App {
+  text-align: center;
+  background: #cda35b;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.poster {
+  width: 380px;
+  margin: 40px auto;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  text-align: center;
+
+
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 40%),
+    linear-gradient(160deg, #e8d4a8 0%, #c9a96e 40%, #d4b483 60%, #bfa06a 100%);
+
+  outline: 10px solid #3b2510;
+  box-shadow:
+    0 0 0 14px #3b2510,
+    0 0 0 18px #8b6914,
+    0 20px 60px rgba(0,0,0,0.8),
+    inset 0 0 60px rgba(80,40,0,0.25);
+}
+
+
+.poster::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 2px solid rgba(59,37,16,0.35);
+}
+
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse, transparent 50%, rgba(0,0,0,0.4));
+}
+
+.wanted-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  padding: 20px 0 10px;
+  color: #2a1800;
+
+  text-shadow:
+    2px 2px 0 #8b5e1a,
+    4px 4px 0 rgba(59,37,16,0.4),
+    6px 6px 8px rgba(0,0,0,0.5);
+}
+
+
+.poster-img-wrapper {
+  margin: 0 30px;
+  border: 5px solid #3b2510;
+  box-shadow:
+    inset 0 0 20px rgba(0,0,0,0.5),
+    0 4px 12px rgba(0,0,0,0.4);
+  overflow: hidden;
+  background: #c0a060;
+}
+
+.poster-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  filter: sepia(50%) contrast(115%) brightness(0.95);
+}
+
+
+.doa-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dead-text {
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+
+
+.curl::before {
+  content: "❧";
+  font-size: 20px;
+}
+
+.curl.flip::before {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+
+.name-text {
+  font-size: 42px;        
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 10px 20px;           
+  color: #2a1800;
+
+  text-shadow:
+    2px 2px 0 #8b5e1a,
+    4px 4px 6px rgba(0,0,0,0.4);
+
+ 
+  word-wrap: break-word;        
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.bounty-row {
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.berry-symbol {
+  margin-right: 6px;
+}
+
+
+.bottom-curls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px 0;
+}
+
+
+.marine-footer {
+  margin-top: 20px;
+  padding: 10px 20px 20px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #3b2510;
+}
+
+.marine-text {
+  text-align: right;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+
+.upload-box {
+  margin-bottom: 40px;
+}
