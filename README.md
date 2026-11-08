@@ -1,6 +1,6 @@
 # Image Uploader Web Application
 
-A full-stack web application that allows users to upload and manage images. Uploaded images are stored securely in an AWS S3 bucket. The application is built using a modern tech stack with a Spring Boot backend and a ReactJS frontend.
+A full-stack web application that allows users to upload and manage images. Uploaded images are stored securely in an AWS S3 bucket. The application is built using a modern tech stack with a Spring Boot backend and a ReactJS frontend
 
 ---
 
